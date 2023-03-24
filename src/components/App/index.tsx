@@ -1,6 +1,6 @@
 import styles from './index.module.scss';
 import { memo, useMemo } from 'react';
-import SimpleNavsPage, { INavItem } from '../SimpleNavsPage';
+import { SimpleNavsPage, INavItem } from '../SimpleNavsPage';
 
 const App: React.FC = memo(() => {
 
@@ -16,7 +16,7 @@ const App: React.FC = memo(() => {
   ]), []);
 
   return (
-    <div className={styles['tutorial-app']}>
+    <div className={styles['app']}>
       <SimpleNavsPage title='学习里程' routes={routes} />
     </div>
   );
